@@ -20,6 +20,7 @@ function getText<string>(text: string): string {
 // (): string  : 반환 값 타입
 ```
 
+<br/>
 
 ### 발음할 수 있는 변수 이름을 사용하자
 **좋은 예:**
@@ -30,6 +31,8 @@ type Customer = {
   recordId: number;
 }
 ```
+
+<br/>
 
 ### 동일한 유형의 변수는 동일한 단어를 사용하자
 **안좋은 예:**
@@ -42,6 +45,9 @@ function getCustomerData(): User;
 ```typescript
 function getUser(): User;
 ```
+
+<br/>
+
 
 ### 검색할 수 있는 이름을 사용하자
 **안좋은 예:**
@@ -56,6 +62,8 @@ const MILLISECONDS_IN_A_DAY = 24 * 60 * 60 * 1000;
 
 setTimeout(restart, MILLISECONDS_IN_A_DAY);
 ```
+
+<br/>
 
 ### 의도를 나타내는 변수를 사용하자
 **안좋은 예:**
@@ -75,11 +83,12 @@ for (const [id, user] of users) {
 }
 ```
 > **declare** 
-- 타입스크립트 컴파일러에게 해당 변수가 어딘가에 선언되어 있다고 알려주는 행위. 
-- 전역변수를 사용할 때도 되고 .d.ts 파일을 만들때도 사용된다.
+> - 타입스크립트 컴파일러에게 해당 변수가 어딘가에 선언되어 있다고 알려주는 행위. 
+> - 전역변수를 사용할 때도 되고 .d.ts 파일을 만들때도 사용된다.
 >
-[참고](https://stackoverflow.com/questions/35019987/what-does-declare-do-in-export-declare-class-actions)
+> [참고](https://stackoverflow.com/questions/35019987/what-does-declare-do-in-export-declare-class-actions)
 
+<br/>
 
 ### 암시하는 이름은 사용하지 말자
 명시적인 것이 암시적인 것보다 좋다. 명료하게 작성하자.
@@ -95,6 +104,8 @@ const user = getUser();
 const subscription = getSubscription();
 const transaction = charge(user, subscription);
 ```
+
+<br/>
 
 ### 불필요한 문맥은 추가하지 말자
 클래스/타입/객체의 이름에 의미가 담겨있다면, 변수 이름에서 반복하지 말자.
@@ -123,8 +134,9 @@ function print(car: Car): void {
 }
 ```
 > **viod** : 비어있다는 의미. 
-- 타입스크립트는 function의 parameter와 return value도 타입을 명시해줘야 하는데, 주로 return value가 없을 때 void를 활용한다.
+> - 타입스크립트는 function의 parameter와 return value도 타입을 명시해줘야 하는데, 주로 return value가 없을 때 void를 활용한다.
 
+<br/>
 
 ### short circuiting이나 조건문 대신 기본 매개변수를 사용하자
 기본 매개변수는 short circuiting보다 보통 명료하다.
@@ -142,6 +154,7 @@ function loadPages(count: number = 10) {
 }
 ```
 
+<br/>
 
 ### 의도를 알려주기 위해 `enum`을 사용하자
 예를 들어, 값 자체보다 값이 구별되어야 할 때와 같이 코드의 의도를 알려줄 때 `enum`을 사용하면 된다.
