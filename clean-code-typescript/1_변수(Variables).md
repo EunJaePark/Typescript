@@ -91,7 +91,7 @@ for (const [id, user] of users) {
 <br/>
 
 ### 암시하는 이름은 사용하지 말자
-명시적인 것이 암시적인 것보다 좋다. 명료하게 작성하자.
+명시적인 것이 암시적인 것보다 좋다. 명료하게 작성하자.     
 **안좋은 예:**
 ```typescript
 const u = getUser();
@@ -108,7 +108,7 @@ const transaction = charge(user, subscription);
 <br/>
 
 ### 불필요한 문맥은 추가하지 말자
-클래스/타입/객체의 이름에 의미가 담겨있다면, 변수 이름에서 반복하지 말자.
+클래스/타입/객체의 이름에 의미가 담겨있다면, 변수 이름에서 반복하지 말자.     
 **안좋은 예:**
 ```typescript
 type Car = {
@@ -139,7 +139,7 @@ function print(car: Car): void {
 <br/>
 
 ### short circuiting이나 조건문 대신 기본 매개변수를 사용하자
-기본 매개변수는 short circuiting보다 보통 명료하다.
+기본 매개변수는 short circuiting보다 보통 명료하다.      
 **안좋은 예:**
 ```typescript
 function loadPages(count?: number) {
@@ -157,7 +157,7 @@ function loadPages(count: number = 10) {
 <br/>
 
 ### 의도를 알려주기 위해 `enum`을 사용하자
-예를 들어, 값 자체보다 값이 구별되어야 할 때와 같이 코드의 의도를 알려줄 때 `enum`을 사용하면 된다.
+예를 들어, 값 자체보다 값이 구별되어야 할 때와 같이 코드의 의도를 알려줄 때 `enum`을 사용하면 된다.      
 **안좋은 예:**
 ```typescript
 const GENRE = {
